@@ -4,11 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Amina Attaf — Portfolio</title>
+  <link rel="stylesheet" href="style.css">
   <meta name="description" content="Portfolio d'Amina Attaf — Data Analyst / BUT Sciences des Données. Projets : NBA, DataViz, Consommation énergétique, Classification automatique, Reporting, Enquête.">
-  <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
 </head>
-
 <body>
   <header class="site-header">
     <div class="container header-inner">
@@ -32,7 +31,7 @@
       <div class="container hero-grid">
         <div class="hero-text">
           <h2>Je donne vie aux données à travers des tableaux de bord intuitifs et des analyses qui font sens.<br><span>Data • Visualisation • BI</span></h2>
-          <p>Étudiante en première année de cycle ingénieur en informatique à CY Tech, diplômée d’un BUT en Sciences des Données. Je me spécialise en datavisualisation et outils décisionnels.</p>
+          <p>Étudiante en première année de cycle ingénieur en informatique à CY Tech, et titulaire d’un BUT (Bachelor Universitaire de Technologie) en Science des Données. Je suis passionnée par la datavisualisation, les tableaux de bord et la prise de décision fondée sur les données.</p>
           <div class="hero-ctas">
             <a class="btn-primary" href="#projects">Voir mes projets</a>
             <a class="btn-ghost" href="https://www.linkedin.com/in/amina-attaf" target="_blank">LinkedIn</a>
@@ -48,7 +47,7 @@
     <section id="about" class="section">
       <div class="container">
         <h3>À propos</h3>
-        <p>Étudiante en première année de cycle ingénieur en informatique à CY Tech et diplômée d’un BUT en Sciences des Données, je poursuis une spécialisation en datavisualisation et outils décisionnels. J’ai effectué un stage en tant que Data Analyst à la Direction des Systèmes d’Information des Missions Locales (Tarbes) et j’ai ensuite poursuivi en alternance en tant qu’Experte Décisionnelle.</p>
+        <p>Étudiante en <strong>première année de cycle ingénieur en informatique à CY Tech</strong> et diplômé d'un BUT en Science des Données, j'ai choisi de monter en compétences en continuant à apprendre à travers ce diplôme d’ingénieur en informatique. J’ai effectué un stage en tant que Data Analyst (Direction des Systèmes d’Information des Missions Locales, Tarbes) et continué à leurs côté en alternance en tant qu’Experte Décisionnelle — j’ai travaillé sur la création et l’automatisation de tableaux de bord Power BI, ainsi que sur plusieurs autres projets liés aux données, tout en gardant l’utilisateur au centre de mes réflexions.</p>
       </div>
     </section>
 
@@ -60,22 +59,31 @@
           <div class="skill-card">
             <h4>Langages</h4>
             <ul>
-              <li>Python • SQL • VBA • R • Shell</li>
-              <li>HTML • CSS • JavaScript • PHP • C</li>
+              <li>Python • SQL • VBA • Shell • R</li>
+              <li>HTML / CSS / JavaScript • PHP • C • Introduction à SAS</li>
             </ul>
           </div>
           <div class="skill-card">
-            <h4>Outils & BI</h4>
+            <h4>Outils & Business Intelligence</h4>
             <ul>
-              <li>Power BI • Qlik • Tableau</li>
-              <li>Talend • Access • Excel • Notion</li>
+              <li>Power BI • Qlik Sense / QlikView • Tableau</li>
+              <li>Talend • Open Office • Access</li>
             </ul>
           </div>
           <div class="skill-card">
             <h4>Soft Skills & Langues</h4>
             <ul>
-              <li>Travail d’équipe • Rigueur • Curiosité • Organisation</li>
-              <li>Français (courant) • Arabe (courant) • Anglais (A2–B1)</li>
+              <li>Esprit d’équipe • Rigueur • Autonomie • Écoute</li>
+              <li>Organisation • Curiosité • Adaptation</li>
+              <li>Français : courant • Arabe : courant • Anglais : niveau A2-B1</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h4>Centres d’intérêt</h4>
+            <ul>
+              <li>Course à pied</li>
+              <li>Intéressée par la psychologie</li>
+              <li>Design</li>
             </ul>
           </div>
         </div>
@@ -86,31 +94,56 @@
     <section id="projects" class="section">
       <div class="container">
         <h3>Projets</h3>
-        <p class="muted">Cliquez sur une carte pour voir les détails.</p>
+        <p class="muted">Cliquez sur une carte pour voir les détails — images, description, leçon(s) tirée(s) et outils utilisées.</p>
+
         <div class="projects-grid">
+          <!-- Card template: update data-projid to match modal id -->
           <article class="proj-card" data-projid="proj-nba">
-            <img src="images/proj-nba.png" alt="">
-            <h4>Projet NBA</h4>
+            <div class="proj-thumb"><img src="images/proj-nba.png" alt="Projet NBA"></div>
+            <div class="proj-info">
+              <h4>Projet statistique — NBA</h4>
+              <p>Exploration & visualisation de données NBA (SAE), premières analyses, synthèses et graphiques.</p>
+            </div>
           </article>
+
           <article class="proj-card" data-projid="proj-dataviz">
-            <img src="images/proj-dataviz.png" alt="">
-            <h4>Challenge Dataviz — SNCF</h4>
+            <div class="proj-thumb"><img src="images/proj-dataviz.png" alt="Challenge Dataviz"></div>
+            <div class="proj-info">
+              <h4>Challenge DataViz — SNCF</h4>
+              <p>Challenge de dataviz : création d'un tableau de bord Power BI en 1 jour (SNCF).</p>
+            </div>
           </article>
+
           <article class="proj-card" data-projid="proj-energie">
-            <img src="images/proj-energie.png" alt="">
-            <h4>Consommation énergétique</h4>
+            <div class="proj-thumb"><img src="images/proj-energie.png" alt="Consommation énergétique"></div>
+            <div class="proj-info">
+              <h4>Consommation énergétique</h4>
+              <p>Projet annuel : tableaux de bord Power BI pour deux commanditaires (maison & bâtiments d'entreprise).</p>
+            </div>
           </article>
+
           <article class="proj-card" data-projid="proj-classif">
-            <img src="images/proj-classif.png" alt="">
-            <h4>Classification automatique</h4>
+            <div class="proj-thumb"><img src="images/proj-classif.png" alt="Classification automatique"></div>
+            <div class="proj-info">
+              <h4>Classification automatique (INSEE)</h4>
+              <p>CAH pour classifier des individus selon variables régionales — rapport & visualisations sur R.</p>
+            </div>
           </article>
+
           <article class="proj-card" data-projid="proj-reporting">
-            <img src="images/proj-reporting.png" alt="">
-            <h4>SAE Reporting</h4>
+            <div class="proj-thumb"><img src="images/proj-reporting.png" alt="Reporting"></div>
+            <div class="proj-info">
+              <h4>SAE Reporting</h4>
+              <p>Requêtes SQL et tableau de bord — extraction & visualisation de données.</p>
+            </div>
           </article>
+
           <article class="proj-card" data-projid="proj-enquete">
-            <img src="images/proj-enquete.png" alt="">
-            <h4>Projet Enquête</h4>
+            <div class="proj-thumb"><img src="images/proj-enquete.png" alt="Enquête"></div>
+            <div class="proj-info">
+              <h4>Mise en œuvre d'une enquête</h4>
+              <p>Conception questionnaire, collecte (Sphinx) et analyse — soutenance & rapport.</p>
+            </div>
           </article>
         </div>
       </div>
@@ -118,15 +151,15 @@
 
     <!-- CONTACT -->
     <section id="contact" class="section alt">
-      <div class="container">
+    <div class="container">
         <h3>Contact</h3>
         <p>Je reste à votre disposition pour tout échange ou opportunité professionnelle.</p>
         <div class="contact-block">
-          <p><strong>E-mail :</strong> <a href="mailto:aminaattaf31@gmail.com">aminaattaf31@gmail.com</a></p>
-          <p><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/amina-attaf" target="_blank">linkedin.com/in/amina-attaf</a></p>
-          <p><strong>Localisation :</strong> Pau, France</p>
+        <p><strong>E-mail :</strong> <a href="mailto:aminaattaf31@gmail.com">aminaattaf31@gmail.com</a></p>
+        <p><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/amina-attaf" target="_blank">linkedin.com/in/amina-attaf</a></p>
+        <p><strong>Localisation :</strong> Pau, France</p>
         </div>
-      </div>
+    </div>
     </section>
   </main>
 
@@ -136,14 +169,86 @@
     </div>
   </footer>
 
-  <!-- MODALES -->
+  <!-- MODALS (one per project) -->
   <div id="modals-root">
-    <dialog class="proj-modal" id="proj-nba"><button data-close>&times;</button><h4>Projet NBA</h4><p>Analyse statistique avec Excel sur données NBA...</p></dialog>
-    <dialog class="proj-modal" id="proj-dataviz"><button data-close>&times;</button><h4>Challenge Dataviz — SNCF</h4><p>Challenge Power BI réalisé en 1 jour...</p></dialog>
-    <dialog class="proj-modal" id="proj-energie"><button data-close>&times;</button><h4>Consommation énergétique</h4><p>Projet annuel de modélisation et datavisualisation sur la consommation d’énergie...</p></dialog>
-    <dialog class="proj-modal" id="proj-classif"><button data-close>&times;</button><h4>Classification automatique</h4><p>Projet INSEE sur données régionales — CAH et visualisation R...</p></dialog>
-    <dialog class="proj-modal" id="proj-reporting"><button data-close>&times;</button><h4>SAE Reporting</h4><p>Requêtes SQL et restitution Power BI...</p></dialog>
-    <dialog class="proj-modal" id="proj-enquete"><button data-close>&times;</button><h4>Projet Enquête</h4><p>Conception et administration d’une enquête (Sphinx)...</p></dialog>
+    <!-- NBA -->
+    <dialog class="proj-modal" id="proj-nba">
+      <button class="modal-close" data-close>&times;</button>
+      <div class="modal-body">
+        <h4>Projet statistique — NBA</h4>
+        <p>Analyse statistique avec Excel : exploration, synthèses univariées, graphiques et rapport (SAE). J'ai appris à synthétiser et à faire parler les données. :contentReference[oaicite:4]{index=4}</p>
+        <div class="modal-gallery">
+          <img src="images/proj-nba.png" alt="">
+          <!-- ajoute d'autres images ici -->
+        </div>
+        <p><strong>Technos :</strong> Excel, analyses statistiques.</p>
+      </div>
+    </dialog>
+
+    <!-- DataViz -->
+    <dialog class="proj-modal" id="proj-dataviz">
+      <button class="modal-close" data-close>&times;</button>
+      <div class="modal-body">
+        <h4>Challenge DataViz — SNCF</h4>
+        <p>Challenge d'une journée : conception d'un tableau de bord Power BI à partir d'un fichier fourni. Travail en équipe, choix de problématique et restitution. :contentReference[oaicite:5]{index=5}</p>
+        <div class="modal-gallery">
+          <img src="images/proj-dataviz.png" alt="">
+        </div>
+        <p><strong>Technos :</strong> Power BI, Excel</p>
+      </div>
+    </dialog>
+
+    <!-- Energie -->
+    <dialog class="proj-modal" id="proj-energie">
+      <button class="modal-close" data-close>&times;</button>
+      <div class="modal-body">
+        <h4>Consommation énergétique</h4>
+        <p>Projet sur l'année : modélisation (MLD/ MCD), calculs DPE & DJU, et tableaux de bord pour deux commanditaires. Ce projet m'a donné une vraie vision métier. :contentReference[oaicite:6]{index=6}</p>
+        <div class="modal-gallery">
+          <img src="images/proj-energie.png" alt="">
+        </div>
+        <p><strong>Technos :</strong> Power BI, SQL, modélisation</p>
+      </div>
+    </dialog>
+
+    <!-- Classification -->
+    <dialog class="proj-modal" id="proj-classif">
+      <button class="modal-close" data-close>&times;</button>
+      <div class="modal-body">
+        <h4>Classification automatique</h4>
+        <p>Projet INSEE : application d'une CAH pour classer des individus selon variables quantitatives, analyse multivariée et rapport sur R. :contentReference[oaicite:7]{index=7}</p>
+        <div class="modal-gallery">
+          <img src="images/proj-classif.png" alt="">
+        </div>
+        <p><strong>Technos :</strong> R, analyse statistique</p>
+      </div>
+    </dialog>
+
+    <!-- Reporting -->
+    <dialog class="proj-modal" id="proj-reporting">
+      <button class="modal-close" data-close>&times;</button>
+      <div class="modal-body">
+        <h4>SAE Reporting</h4>
+        <p>Extraction via SQL et restitution sous la forme d'un tableau de bord — compréhension des besoins et itérations avec le commanditaire. :contentReference[oaicite:8]{index=8}</p>
+        <div class="modal-gallery">
+          <img src="images/proj-reporting.png" alt="">
+        </div>
+        <p><strong>Technos :</strong> SQL, Power BI / Qlik</p>
+      </div>
+    </dialog>
+
+    <!-- Enquête -->
+    <dialog class="proj-modal" id="proj-enquete">
+      <button class="modal-close" data-close>&times;</button>
+      <div class="modal-body">
+        <h4>Mise en œuvre d'une enquête</h4>
+        <p>Conception et administration d'un questionnaire (Sphinx), collecte sur le terrain, nettoyage et restitution des résultats. Expérience formatrice sur la conception d'enquêtes. :contentReference[oaicite:9]{index=9}</p>
+        <div class="modal-gallery">
+          <img src="images/proj-enquete.png" alt="">
+        </div>
+        <p><strong>Technos :</strong> Sphinx, Excel, présentation</p>
+      </div>
+    </dialog>
   </div>
 </body>
 </html>
